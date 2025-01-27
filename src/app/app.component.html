@@ -1,1 +1,7 @@
-<app-parent></app-parent>
+<!-- <app-parent></app-parent> -->
+
+<app-sizer [(size)]="fontSize"></app-sizer>
+<!-- <app-sizer [size]="fontSize" (sizeChange)="fontSize=$event"></app-sizer> -->
+
+<p>{{fontSize}}</p>
+<p [style.font-size.px]="fontSize">Resizable Text</p>
