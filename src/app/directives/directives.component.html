@@ -1,0 +1,19 @@
+<h1>Attribute Directives</h1>
+<div [ngClass]="{ bold: isBold, italic: isItalic }">
+  This div's classes are dynamically applied based on conditions.
+</div>
+
+<div [ngStyle]="{ 'background-color': bgColor, 'font-size': size + 'px' }">
+  This div's styles are dynamically applied based on properties.
+</div>
+
+<label for="username">Username:</label>
+<input type="text" id="username" [(ngModel)]="userName" class="input-field" title="Enter your username" placeholder="Username" />
+<p class="greeting">Hello, {{ userName }}!</p>
+
+<h1>Structural Directives</h1>
+
+<div *ngIf="isData()">
+  <p>ngIf condition true</p>
+</div>
+

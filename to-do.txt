@@ -1,0 +1,9 @@
+two way binding
+calling function of another component
+directives
+
+--------------------------------------------------✔️---❌---------------------------------------------
+
+custom directives - angular
+materialized error when stack out of memory (conceptual)
+creating service

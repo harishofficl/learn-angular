@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './sizer.component.html',
-  styleUrl: './sizer.component.css'
+  styleUrl: './sizer.component.css',
 })
 export class SizerComponent {
   @Input() size: number = 0;

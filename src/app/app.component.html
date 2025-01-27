@@ -3,5 +3,19 @@
 <app-sizer [(size)]="fontSize"></app-sizer>
 <!-- <app-sizer [size]="fontSize" (sizeChange)="fontSize=$event"></app-sizer> -->
 
-<p>{{fontSize}}</p>
+<p>{{ fontSize }}</p>
 <p [style.font-size.px]="fontSize">Resizable Text</p>
+<br />
+
+<app-directives></app-directives>
+
+<p appHighlight="cyan">
+  AngularJS was developed in 2008-2009 by Misko Hevery and Adam Abrons and is
+  now maintained by Google. AngularJS is a Javascript open-source front-end
+  framework. It is used to develop single-page web applications (SPAs).<br />
+  It is a continuously growing and expanding framework which provides better
+  ways for developing web applications.<br />
+  In this AngularJS tutorial, we will explore the key concepts, features, and
+  steps to kickstart your journey in creating robust and interactive web
+  applications.
+</p>

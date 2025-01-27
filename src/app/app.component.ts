@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { ParentComponent } from "./parent/parent.component";
-import { SizerComponent } from "./sizer/sizer.component";
+import { SizerComponent } from './sizer/sizer.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { HighlightDirective } from './highlight.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ParentComponent, SizerComponent],
+  imports: [SizerComponent, DirectivesComponent, HighlightDirective],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'learn-angular';
