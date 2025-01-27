@@ -4,6 +4,6 @@ directives
 
 --------------------------------------------------✔️---❌---------------------------------------------
 
-custom directives - angular
+custom directives - angular ✔️
 materialized error when stack out of memory (conceptual)
-creating service
+creating service ✔️
