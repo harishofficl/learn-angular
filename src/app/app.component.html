@@ -21,7 +21,10 @@
 </p>
 
 <h1>Service</h1>
-
+<div>
+  <h2>Student data from API</h2>
+  <div *ngFor="let student of students">Name: {{student.name}}, Age: {{student.age}}</div>
+</div>
 <div>
   <h2>Data:</h2>
   <ul>

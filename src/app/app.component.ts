@@ -16,13 +16,18 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'learn-angular';
   fontSize: number = 16;
-
-  studentMarks: number[] = [];
-
   newMark: number = 0;
+  studentMarks: number[];
+  students: Student[];
 
   constructor(private myService: CustomServiceService) {
     this.studentMarks = myService.getMarks();
+    this.students = [];
+    this.getStudentsService();
+  }
+
+  async getStudentsService() {
+    this.students = await this.myService.getStudents();
   }
 
   addMark() {
@@ -30,3 +35,9 @@ export class AppComponent {
     this.newMark = 0;
   }
 }
+
+interface Student {
+  name: string;
+  age: number;
+}
+
