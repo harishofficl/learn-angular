@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
 import { ChildComponent } from "../child/child.component";
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-parent',
   standalone: true,
-  imports: [ChildComponent],
+  imports: [ChildComponent, CommonModule, FormsModule],
   templateUrl: './parent.component.html',
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
-  age: number = 22;
-
-  displayGrade(grade: string): void {
-    document.getElementsByTagName("div")[0].innerHTML = grade;
-  }
+  age: number = 0;
 }

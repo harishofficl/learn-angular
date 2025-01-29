@@ -15,7 +15,6 @@ export class CustomServiceService {
       'https://6798695ebe2191d708af901f.mockapi.io/studentMarks'
     );
     const studentsJson: [] = await students.json();
-    console.log(studentsJson);
     return studentsJson;
   }
 

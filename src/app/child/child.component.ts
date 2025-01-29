@@ -1,19 +1,29 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
   standalone: true,
   imports: [],
   templateUrl: './child.component.html',
-  styleUrl: './child.component.css'
+  styleUrl: './child.component.css',
 })
 export class ChildComponent {
- @Input() ageParent: number = 0;
+  @Input() ageParent: number;
 
+  constructor() {
+    this.ageParent = 0;
+    console.log("Constructor");
+  }
 
- @Output() gradeEvent: EventEmitter<string> = new EventEmitter<string>();
+  ngOnChanges() {
+    console.log('ngOnChanges');
+  }
 
- ngOnInit() {
-   this.gradeEvent.emit("hi");
- }
+  ngOnInit() {
+    console.log('ngOnInit');
+  }
+
+  ngDoCheck() {
+    console.log('ngDoCheck');
+  }
 }

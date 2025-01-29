@@ -6,11 +6,24 @@ import { CustomServiceService } from './custom-service.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ProfileDirective } from './profile.directive';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { ParentComponent } from './parent/parent.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SizerComponent, DirectivesComponent, HighlightDirective, CommonModule, FormsModule, ProfileDirective],
+  imports: [
+    ParentComponent,
+    SizerComponent,
+    DirectivesComponent,
+    HighlightDirective,
+    CommonModule,
+    FormsModule,
+    ProfileDirective,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -41,4 +54,3 @@ interface Student {
   name: string;
   age: number;
 }
-
