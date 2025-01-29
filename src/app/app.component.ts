@@ -5,11 +5,12 @@ import { HighlightDirective } from './highlight.directive';
 import { CustomServiceService } from './custom-service.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ProfileDirective } from './profile.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SizerComponent, DirectivesComponent, HighlightDirective, CommonModule, FormsModule],
+  imports: [SizerComponent, DirectivesComponent, HighlightDirective, CommonModule, FormsModule, ProfileDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
