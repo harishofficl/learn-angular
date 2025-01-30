@@ -14,4 +14,4 @@ routing with lazy loading
 
 --------------------------------------------------✔️---❌---------------------------------------------
 29.01.2025
-creating service API call
+creating service with API call (dataStore)
