@@ -11,5 +11,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
-  age: number = 0;
+  age!: number;
+
+  ngDoCheck() {
+    // ngDoCheck() is called immediately after ngOnChanges().
+    console.log('ngDoCheck-parent');
+  }
 }

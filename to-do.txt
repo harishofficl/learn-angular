@@ -1,17 +1,38 @@
-two way binding
-calling function of another component
-directives
+two way binding ✔️
+calling function of another component 
+directives ✔️
 
 --------------------------------------------------✔️---❌---------------------------------------------
 
 custom directives - angular ✔️
-materialized error when stack out of memory (conceptual)
+materialized error when stack out of memory (conceptual) ✔️
 creating service ✔️
 
 --------------------------------------------------✔️---❌---------------------------------------------
 
-routing with lazy loading
+routing with lazy loading ✔️
 
 --------------------------------------------------✔️---❌---------------------------------------------
+
 29.01.2025
-creating service with API call (dataStore)
+creating service with API call (dataStore) ✔️
+
+--------------------------------------------------✔️---❌---------------------------------------------
+
+30.01.2025
+throttle
+debounce
+subject
+behaviour-subject
+
+--------------------------------------------------✔️---❌---------------------------------------------
+
+31.01.2025
+utility functions in rxjs - explore everything 
+reactive forms module - validations
+generators in js
+--------------------------------------------------✔️---❌---------------------------------------------
+
+--------------------------------------------------✔️---❌---------------------------------------------
+
+--------------------------------------------------✔️---❌---------------------------------------------

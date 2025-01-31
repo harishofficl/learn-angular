@@ -1,0 +1,33 @@
+<div id="name-control-container">
+  <label for="name-control">NameControl: </label>
+  <input id="name-control" type="text" [formControl]="name" />
+</div>
+
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <label for="name">Name: </label>
+  <input id="name" type="text" formControlName="inputName" />
+
+  <label for="age">Age: </label>
+  <input id="age" type="number" formControlName="inputAge" />
+
+  <label for="number">Number: </label>
+  <input id="number" type="tel" formControlName="inputNumber" />
+
+  <div formGroupName="address" class="address">
+    <h2>Address</h2>
+
+    <label for="street">Street: </label>
+    <input id="street" type="text" formControlName="street" />
+
+    <label for="city">City: </label>
+    <input id="city" type="text" formControlName="city" />
+    
+    <label for="state">State: </label>
+    <input id="state" type="text" formControlName="state" />
+
+    <label for="zip">Zip Code: </label>
+    <input id="zip" type="text" formControlName="zip" />
+  </div>
+
+  <input id="submit" type="submit" />
+</form>

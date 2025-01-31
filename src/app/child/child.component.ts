@@ -10,11 +10,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ChildComponent {
   @Input() ageParent: number;
 
+ 
   constructor() {
     this.ageParent = 0;
-    console.log('Constructor');
   }
-
+ /*
   ngOnChanges() {
     // @Input-bound inputs
     console.log('ngOnChanges');
@@ -27,7 +27,7 @@ export class ChildComponent {
 
   ngDoCheck() {
     // ngDoCheck() is called immediately after ngOnChanges().
-    console.log('ngDoCheck');
+    console.log('ngDoCheck-child');
   }
 
   ngAfterContentInit() {
@@ -58,4 +58,5 @@ export class ChildComponent {
     // destroy the component
     console.log("ngOnDestroy");
   }
+  */
 }

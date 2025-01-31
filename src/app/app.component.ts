@@ -8,6 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { ProfileDirective } from './profile.directive';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ParentComponent } from './parent/parent.component';
+import { FirstComponent } from "./first/first.component";
+import { SecondComponent } from "./second/second.component";
+import { FormsComponent } from "./forms/forms.component";
 
 @Component({
   selector: 'app-root',
@@ -23,7 +26,10 @@ import { ParentComponent } from './parent/parent.component';
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
-  ],
+    FirstComponent,
+    SecondComponent,
+    FormsComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
